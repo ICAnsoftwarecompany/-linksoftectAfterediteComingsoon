@@ -185,38 +185,113 @@ video {
 
 
 /* Responsive Design */
+
+/* الأجهزة اللوحية والمتوسطة (أقل من 768px) */
 @media (max-width: 768px) {
+    .content {
+        top: 45%; /* تعديل الموقع */
+        padding: 1rem; /* تقليل الحشوات */
+    }
+
     .content h1 {
-        font-size: 2.5rem; /* Adjusted for tablets */
+        font-size: 4rem; /* حجم أصغر للعنوان */
+        margin-bottom: 1rem;
     }
 
     .content p {
-        font-size: 2rem; /* Scaled down for better readability */
-        margin-inline-end: 3%;
+        font-size: 2rem; /* حجم النص مناسب */
+        margin: 0.5rem 0; /* تعديل المسافات */
     }
 
-    .cta-button {
-        font-size: 0.9rem;
+    .logo {
+        top: 20px; /* إنزال الشعار قليلاً */
+        right: 20px; /* تقليل المسافة من الحافة */
+    }
+
+    .social-links {
+        bottom: 20px; /* رفع الروابط قليلاً */
+        left: 10px; /* تقليل المسافة الجانبية */
+        gap: 10px; /* تقليل المسافات بين الأيقونات */
+    }
+
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-links span {
+        font-size: 1rem; /* تكبير النصوص قليلاً */
     }
 }
 
+/* الهواتف الصغيرة (أقل من 480px) */
 @media (max-width: 480px) {
-    .content h1 {
-        font-size: 1.8rem; /* Adjusted for smaller screens */
+    .content {
+        top: 60%; /* تعديل الموقع للوسط */
+        padding: 0.5rem;
     }
+
+    .content h1 {
+        font-size: 4rem; /* تقليل حجم العنوان */
+        margin-bottom: 10rem; /* تعديل المسافة السفلية */
+        transform: translateY(-100px); /* رفع النص للأعلى */
+        position: relative; /* يسمح باستخدام transform */
+    }
+    
 
     .content p {
-        font-size: 1.5rem; /* Smaller for mobile devices */
-        margin-inline-end: 2%;
+        font-size: 2rem; /* حجم النص */
+        margin: 1rem 4; /* تعديل المسافات العمودية */
+        transform: translate(-50px, -20px); /* ترحيل النص للأعلى ولليسار */
+        position: relative; /* يسمح بتعديل الموضع باستخدام transform */
+        margin-bottom: -6rem; /* تعديل المسافة السفلية */
+    }
+    
+    .logo {
+        top: 10px; /* إنزال الشعار قليلاً */
+        right: 10px; /* تقليل المسافة الجانبية */
     }
 
-   
+    .social-links {
+        bottom: 10px; /* رفع الروابط */
+        left: 10px; /* محاذاة للزاوية */
+        flex-direction: column; /* ترتيب الروابط بشكل عمودي */
+        align-items: flex-start; /* محاذاة الروابط لليسار */
+        gap: 5px; /* تقليل المسافات بين العناصر */
+    }
+
     .social-links img {
-        width: 25px;
+        width: 25px; /* حجم أصغر للأيقونات */
         height: 25px;
     }
 
     .social-links span {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* تقليل حجم النصوص */
+    }
+}
+
+/* الشاشات الصغيرة جدًا (أقل من 320px) */
+@media (max-width: 320px) {
+    .content {
+        top: 55%;
+        padding: 0.5rem;
+    }
+
+    .content h1 {
+        font-size: 2rem; /* حجم أصغر للعنوان */
+        margin-bottom: 0.3rem;
+    }
+
+    .content p {
+        font-size: 1rem; /* تقليل النصوص */
+    }
+
+    .social-links img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .social-links span {
+        font-size: 0.7rem; /* حجم أصغر للنصوص */
     }
 }
