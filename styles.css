@@ -95,7 +95,6 @@ video {
     transform: translate(-140px, 150px); /* ترحيل إلى اليسار وإنزال لأسفل */
     white-space: nowrap; /* إبقاء النص على سطر واحد */
     overflow: hidden; /* إخفاء النص الزائد أثناء الكتابة */
-    border-right: 2px solid rgba(255, 255, 255, 0.75); /* إضافة مؤشر الكتابة */
     animation: typing 4s steps(30, end), blink 0.7s step-end infinite; /* أنيميشن الكتابة */
 }
 
